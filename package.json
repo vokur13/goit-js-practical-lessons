@@ -1,21 +1,21 @@
 {
-  "name": "goit-js-hw-11-draft-ii",
+  "name": "goit-js-practical-lessons",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://vokur13.github.io/goit-js-hw-11-draft-ii",
+  "homepage": "https://vokur13.github.io/goit-js-practical-lessons",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-11-draft-ii/"
+    "build": "parcel build src/*.html --public-url /goit-js-practical-lessons/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vokur13/goit-js-hw-11-draft-ii.git"
+    "url": "git+https://github.com/vokur13/goit-js-practical-lessons.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "VOLODYMYR_KUROV.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vokur13/goit-js-hw-11-draft-ii/issues"
+    "url": "https://github.com/vokur13/goit-js-practical-lessons/issues"
   },
   "dependencies": {
     "infinite-scroll": "^4.0.1",
