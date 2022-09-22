@@ -1,9 +1,16 @@
 import transactions from '../json/transactions.json';
 
-console.log(transactions[0]);
-
-const key = Object.keys(transactions[0]);
-
-console.log(key);
-
-console.log(transactions[0][key]);
+transactions.forEach(item => {
+  const data = Object.entries(item);
+  const keyArr = [];
+  data.forEach(([key, value]) => {
+    if (key !== 'id' && !keyArr.includes(key)) {
+      keyArr.push(key);
+    }
+  });
+  console.log(keyArr);
+  for (let index = 0; index < keyArr.length; index++) {
+    const element = keyArr[index];
+    console.log(element);
+  }
+});
