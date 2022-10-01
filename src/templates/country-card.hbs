@@ -1,0 +1,49 @@
+<div class='card'>
+  <div class='card-header'>
+    <div class='card-img-top'>
+      <img src='{{flags.svg}}' alt='{{name.common}}' width='40' />
+    </div>
+    <h2 class='card-title'>{{name.official}}</h2>
+  </div>
+  <div class='card-body'>
+    <p class='card-text'>Capital: <span class='card-span'>{{capital}}</span></p>
+    <p class='card-text'>Population:
+      <span class='card-span'>{{population}}</span></p>
+    <p class='card-text'>Languages:
+      <span class='card-span'>{{languages}}</span>
+    </p>
+    <p class='card-text'>Languages:
+      {{#with this}}
+        <p>{{log this}}</p>
+        <p>{{log languages}}</p>
+        {{#each languages as |value key|}}
+          <p>{{key}}: {{value}}</p>
+        {{/each}}
+      {{/with}}
+    </p>
+  </div>
+</div>
+
+{{!-- {{#with user}}
+  {{#each language}}
+    <p>{{this}}</p>
+  {{/each}}
+{{/with}} --}}
+
+{{!-- {{#with user as |x|}}
+  <p>{{x.name}}</p>
+  {{#each x.language}}
+    <p>{{this}}</p>
+  {{/each}}
+{{/with}} --}}
+
+{{!-- {{#each user as |key value|}}
+  <p>{{log this}}</p>
+{{/each}} --}}
+
+{{!-- {{#each user as |xValue xKey|}}
+  <p>{{@key}}:{{this}}</p>
+  {{#each xValue/language as |yValue yKey|}}
+    <p>{{yValue}}</p>
+  {{/each}}
+{{/each}} --}}
