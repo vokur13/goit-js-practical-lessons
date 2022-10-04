@@ -18,6 +18,7 @@
     "url": "https://github.com/vokur13/goit-js-practical-lessons/issues"
   },
   "dependencies": {
+    "date-fns": "^2.29.3",
     "infinite-scroll": "^4.0.1",
     "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
